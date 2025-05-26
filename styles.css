@@ -1,0 +1,61 @@
+ body {
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: url('/mnt/data/2cf39143-8040-489d-9953-c42b1060c836.png') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    section {
+      padding: 2rem;
+    }
+    .info, .register {
+      background-color: #111;
+      margin: 1rem 0;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .register form {
+      display: flex;
+      flex-direction: column;
+    }
+    .register input {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    #pay-btn {
+      padding: 0.7rem;
+      background-color: rgb(0, 0, 0);
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    #pay-btn:hover {
+      background-color: #d00;
+    }
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
