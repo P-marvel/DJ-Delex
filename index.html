@@ -10,38 +10,50 @@
 <body>
  
 <header>
-  <h1>DJ Delex & Old Friends Christmas Party</h1>
-</header>
+    <h1>DJ Delex & Old Friends Christmas Party</h1>
+  </header>
 
-<section class="info">
-  <h2>About the Event</h2>
-  <p>Join DJ Delex and his old friends for an electrifying Christmas Party on <strong>26th December 2025</strong>. It's going to be a night to remember filled with top-notch music, performances, and unforgettable vibes. Red carpet starts at <strong>4PM</strong> and the party goes on till mama calls!</p>
-  <p><strong>Location:</strong> Undisclosed (shared after registration)</p>
-  <p><strong>Music Policy:</strong> DJ XsmarT (RayPower FM) & Other Top DJs</p>
-  <p><strong>Hype Policy:</strong> Hypeman Xyno & Other Top Hype Men</p>
-  <p><strong>Entry:</strong> Strictly by <span style="color: lime; font-weight: bold;">Registration / Invitation</span></p>
-  <h3>Fee: ₦5,000</h3>
-  <button id="pay-btn" onclick="makePayment()">Register</button>
-</section>
+  <section class="flyer">
+    <h2>Official Flyer</h2>
+    <img src="DJDELEX.png" alt="DJ Delex Party Flyer" />
+  </section>
 
-<section class="register">
-  <h2>Complete Your Registration</h2>
-  <form id="regForm" class="disabled">
-    <input type="text" name="name" placeholder="Full Name" required disabled />
-    <input type="email" name="email" placeholder="Email Address" required disabled />
-    <input type="tel" name="phone" placeholder="Phone Number" required disabled />
-    <input type="text" name="tx_ref" id="tx_ref" readonly />
-    <button type="submit" disabled>Submit Registration</button>
-  </form>
-  <p id="status"></p>
-</section>
+  <section class="info">
+    <h2>Event Details</h2>
+    <p>Let’s rock this Christmas season together as DJ Delex hosts old friends!</p>
 
-<footer>
-  <p>&copy; 2025 DJ Delex Entertainment. All rights reserved.</p>
-</footer>
+    <h3>🎉 Featuring:</h3>
+    <ul>
+      <li>Lots of Games</li>
+      <li>Networking</li>
+      <li>Special performance by the host</li>
+      <li>Chitchat</li>
+      <li>Matchmaking</li>
+      <li>Rap battle and many more!</li>
+    </ul>
 
-<!-- Include Paystack SDK -->
-<script src="https://js.paystack.co/v1/inline.js"></script>
+    <p><strong>Venue:</strong> Undisclosed (shared after registration)</p>
+    <p><strong>Date:</strong> 26th December, 2025</p>
+    <p><strong>Red carpet:</strong> 4:00 PM</p>
+    <p><strong>Party time:</strong> 7:00 PM till dawn</p>
+    <p><strong>Music Policy:</strong> DJ XsmarT (RayPower FM) & other top-notch DJs</p>
+    <p><strong>Hype Policy:</strong> Hypeman Xyno & other top-notch hypemen</p>
+
+    <p><strong class="highlight">Entry:</strong> Strictly by Registration / Invitation</p>
+
+    <label for="ticket">Choose Ticket Type:</label>
+    <select id="ticket">
+      <option value="5000">Regular - ₦5,000</option>
+    </select>
+    <br><br>
+    <button id="pay-btn" onclick="makePayment()">Pay & Register</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DJ Delex Entertainment. All rights reserved.</p>
+  </footer>
+
+  <script src="https://js.paystack.co/v1/inline.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
