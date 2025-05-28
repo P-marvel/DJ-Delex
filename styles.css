@@ -63,6 +63,12 @@ body {
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
+    .flyerimg {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
     .highlight {
       color: lime;
       font-weight: bold;
